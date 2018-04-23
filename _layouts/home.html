@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="home">
+{% for item in site.work %}
+  <a href="{{ item.url }}"><img src="{{ item.image }}"/ alt="{{ item.title }} image"></a>
+{% endfor %}
+</div>
