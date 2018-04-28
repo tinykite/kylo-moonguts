@@ -1,6 +1,0 @@
----
-layout: post
-title: "Artcrank 2013 Poster"
-tags: poster illustration illo prince purplerain artcrank minneapolis posters
-image: https://78.media.tumblr.com/9d4e711277c1d5d4ff90ae924dbc3c9f/tumblr_nl6je7QWLp1qbng02o1_500.jpg
----
