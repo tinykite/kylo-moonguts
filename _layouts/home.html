@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-  <section id="options" class="clearfix">
-	<ul id="filters" class="option-set clearfix" data-option-key="filter">
+  <div class="navigation">
+  <section id="options">
+	<ul id="filters" class="option-set" data-option-key="filter">
 		<li><a href="#filter" data-option-value="*" class="selected">Everything</a></li>
 		{% for item in site.data.navigation.header %}
 		<li><a href="#filter" data-option-value=".{{ item.title | downcase }}">{{ item.title }}</a></li>
 		{% endfor %}
 	</ul>
 </section>
+</div>
 
 <div id="container">
 {% for post in site.posts %}
