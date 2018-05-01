@@ -74,85 +74,14 @@ main {
   margin-top: 2rem;
 }
 
-.item {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
+.element {
+   display: grid;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
 }
 
-.item img {
-  object-fit: cover;
-  object-position: bottom;
-  font-family: 'object-fit: cover; object-position: bottom;';
-  max-width: 100%;
-}
-
-.menu-icon {
-   height: 45px;
-   width: 45px;
-   @include min-width($min-width--lg){
-   display: none;
-   }
-}
-
-.button {
-  text-align: right;
-  @include min-width($min-width--lg) {
-  display: none;
-  }
-}
-
-.menu{
-   ul {
-    list-style: none;
-    padding: 0;
-    }
-    li {
-    padding-right: 1rem;
-    font-size: 16px;
-    }
-
-  @include max-width($max-width--md){
-  width: 100%;
-  height: auto;
-  background: #344567;
-  color: #fff;
-  padding: 3rem;
-  letter-spacing: 2px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-   a {
-  color: #ffffff;
-    }
-    li {
-  padding-top: .25rem;
-    }
-  }
-
-  @include min-width($min-width--lg){
-  ul {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  }
-  li {
-  font-size: 1.25rem;
-  }
-    a {
-  text-decoration: none;
-  color: darken(#9AA399, 25%);
-  &:hover {
-  color: #9AA399;
-      }
-    }
-  }
-}
 
 .logo {
   text-align: center;
@@ -160,11 +89,6 @@ main {
   line-height: 1;
   margin: 0;
   padding: 0;
-}
-
-.navigation {
-  text-align: center;
-  margin: 0 auto;
 }
 
 footer {
@@ -217,4 +141,6 @@ h2 {
   text-transform: none;
   color: #222;
 }
+
+
 
