@@ -167,5 +167,40 @@ main {
   max-width: 100%;
 }
 
+.navigation {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navigation{
+  ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+  li {
+  font-size: 1.25rem;
+  padding-right: 1rem;
+  }
+    a {
+  text-decoration: none;
+  color: darken(#9AA399, 25%);
+  &:hover {
+  color: #9AA399;
+      }
+    }
+  }
+
+  .selected {
+  a:link, a:visited, a:hover, a:active {
+   color: black;
+   background: black;
+  }
+  }
+
+
 
 
