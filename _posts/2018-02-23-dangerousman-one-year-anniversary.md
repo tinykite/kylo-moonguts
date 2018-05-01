@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dangerous Man Brewing 1-Year Anniversary"
-tags: minneapolis craft beer screenprinting posters dangerousman brewing design illo
+tags: posters design
 image: https://78.media.tumblr.com/63bf04e0b50acaceb70ec231e4b66fbb/tumblr_n04r5zoGe41qbng02o1_500.jpg
 ---
 ![Poster illustration](https://78.media.tumblr.com/22daba493c01138e6f45bb6fb71e8b9e/tumblr_n04r5zoGe41qbng02o2_500.jpg)
