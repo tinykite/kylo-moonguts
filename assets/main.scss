@@ -66,24 +66,28 @@ p {
   margin-bottom: 1rem;
 }
 
-main {
+.container {
   display: grid;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 2rem;
 }
 
 .element {
-   display: grid;
-  padding: 0;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 2rem;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: .75rem;
+}
+
+.element img {
+  object-fit: cover;
+  object-position: bottom;
+  font-family: 'object-fit: cover; object-position: bottom;';
+  max-width: 100%;
 }
 
 
-.logo {
+.masthead {
   text-align: center;
   font-size: 36px;
   line-height: 1;
@@ -140,6 +144,27 @@ h2 {
 .post-title {
   text-transform: none;
   color: #222;
+}
+
+main {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.item {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.item img {
+  object-fit: cover;
+  object-position: bottom;
+  font-family: 'object-fit: cover; object-position: bottom;';
+  max-width: 100%;
 }
 
 
