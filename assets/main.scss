@@ -49,12 +49,16 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  padding-top: 1.5rem;
 }
 
 .wrapper {
   max-width: 975px;
   margin: 0 auto;
   padding-top: 1rem;
+   @include min-width($min-width--xl) {
+    max-width: 85%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,24 +70,39 @@ p {
   margin-bottom: 1rem;
 }
 
-.container {
-  display: grid;
-  padding: 0;
-  grid-template-columns: repeat(3, 1fr);
+.grid {
+margin-top: 2rem;
 }
 
-.element {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  margin: .75rem;
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-.element img {
-  object-fit: cover;
-  object-position: bottom;
-  font-family: 'object-fit: cover; object-position: bottom;';
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+  @include min-width($min-width--md) {
+  width: 33.333%;
+  }
+ 
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
   max-width: 100%;
+}
+
+.grid-item img:hover {
+  opacity: 0.75;
 }
 
 
@@ -121,9 +140,6 @@ font-size: 21px;
 margin-top: 1rem;
 }
 
-h2 {
-  color: #ccc;
-}
 
 .post {
   ul {
@@ -132,9 +148,15 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;  
+    margin: 0;
+    padding: 0;
   }
   li {
-      padding-right: .5rem;
+      margin: 0;
+      padding: 0 .5rem 0 0;
+  }
+  li:last-child {
+  padding-right: 0;
   }
   p {
   text-align: center;
@@ -146,60 +168,49 @@ h2 {
   color: #222;
 }
 
-main {
-  display: grid;
+.tag-navigation {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* ---- button ---- */
+
+.button {
+  border: none;
+  color: #222;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
   padding: 0;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+    padding-bottom: 5px;
+    margin-right: 1em;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:hover {
+  color: #222;
+}
+
+.button.is-checked {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  align-self: flex-end;
+  color: #999;
+}
+
+
+.button:focus { outline: none; }
+
+footer {
   margin-top: 2rem;
 }
-
-.item {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.item img {
-  object-fit: cover;
-  object-position: bottom;
-  font-family: 'object-fit: cover; object-position: bottom;';
-  max-width: 100%;
-}
-
-.navigation {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.navigation{
-  ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  }
-  li {
-  font-size: 1.25rem;
-  padding-right: 1rem;
-  }
-    a {
-  text-decoration: none;
-  color: darken(#9AA399, 25%);
-  &:hover {
-  color: #9AA399;
-      }
-    }
-  }
-
-  .selected {
-  a:link, a:visited, a:hover, a:active {
-   color: black;
-   background: black;
-  }
-  }
 
 
 
