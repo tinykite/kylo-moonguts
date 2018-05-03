@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/style-isotope.css" | relative_url }}">
 
-  <script src="assets/js/jquery-1.7.1.min.js"></script>
+  <script src="{{"/assets/js/jquery-1.7.1.min.js" | relative_url }}"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}
