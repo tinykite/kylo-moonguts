@@ -84,41 +84,26 @@ margin-top: 2rem;
 /* ---- .grid-item ---- */
 
 .grid-sizer,
-.grid-item, .grid-item-square {
+.grid-item {
   width: 50%;
   @include min-width($min-width--md) {
   width: 25%;
   }
 }
 
-.grid-item, .grid-item-square {
+.grid-item {
   float: left;
+  padding: .75rem;
 }
 
-.grid-item img, .grid-item-square img {
+.grid-item img {
   display: block;
   max-width: 100%;
 }
 
-.grid-item-square img {
-  object-fit: cover;
-  height: 250px;
-  width: 250px;
-}
 
-.grid-item-square {
-  margin-bottom: 1rem;
-  @include min-width($min-width--xl) {
-  margin-bottom: 2rem;
-  }
-}
-
-.grid-item img:hover, .grid-item-square img:hover {
+.grid-item img:hover {
   opacity: 0.75;
-}
-
-.grid-spacing {
-  padding: .75rem;
 }
 
 .masthead {
@@ -232,5 +217,12 @@ footer {
   max-width: 100%;
 }
 
+.embed-container { 
+position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; 
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+}
 
 

@@ -3,7 +3,11 @@ layout: default
 ---
 <article class="post">
 <h2 class="post-title">{{ page.title }}</h2>
+{% if page.video %}
+<div class="embed-container"><iframe src="{{ page.video }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+{% else %}
 <img src="{{ page.image}}"/>
+{% endif %}
   	{% if content %}
     {{ content }}
     {% endif %}
