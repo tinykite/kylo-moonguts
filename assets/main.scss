@@ -213,5 +213,15 @@ footer {
 }
 
 
+.post {
+   @include min-width($min-width--md) {
+    max-width: 50%;
+  }
+}
+
+.post img {
+  max-width: 100%;
+}
+
 
 
