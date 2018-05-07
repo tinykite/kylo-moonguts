@@ -84,27 +84,48 @@ margin-top: 2rem;
 /* ---- .grid-item ---- */
 
 .grid-sizer,
-.grid-item {
+.grid-item, .grid-item-square {
   width: 50%;
   @include min-width($min-width--md) {
-  width: 33.333%;
+  width: 20%;
   }
- 
+  @include min-width($min-width--lg) {
+  width: 25%;
+  }
 }
 
-.grid-item {
+.grid-item, .grid-item-square {
   float: left;
 }
 
-.grid-item img {
+.grid-item img, .grid-item-square img {
   display: block;
   max-width: 100%;
 }
 
-.grid-item img:hover {
+.grid-item-square img {
+  object-fit: cover;
+  @include max-width($max-width--md) {
+  height: 200px;
+  width: 200px;
+  }
+  @include min-width($min-width--lg) {
+  height: 275px;
+  width: 275px;
+  }
+}
+
+.grid-item-square {
+  margin-bottom: 1rem;
+}
+
+.grid-item img:hover, .grid-item-square img:hover {
   opacity: 0.75;
 }
 
+.grid-spacing {
+  padding: .75rem;
+}
 
 .masthead {
   text-align: center;
@@ -112,13 +133,6 @@ margin-top: 2rem;
   line-height: 1;
   margin: 0;
   padding: 0;
-}
-
-footer {
-  text-align: center;
-  margin-top: 3rem;
-  color: #ccc;
-  font-style: italic;
 }
 
 .post {
@@ -209,7 +223,8 @@ margin-top: 1rem;
 .button:focus { outline: none; }
 
 footer {
-  margin-top: 2rem;
+  margin: 3rem 0;
+  text-align: center;
 }
 
 
