@@ -87,9 +87,6 @@ margin-top: 2rem;
 .grid-item, .grid-item-square {
   width: 50%;
   @include min-width($min-width--md) {
-  width: 20%;
-  }
-  @include min-width($min-width--lg) {
   width: 25%;
   }
 }
@@ -105,18 +102,15 @@ margin-top: 2rem;
 
 .grid-item-square img {
   object-fit: cover;
-  @include max-width($max-width--md) {
-  height: 200px;
-  width: 200px;
-  }
-  @include min-width($min-width--lg) {
-  height: 275px;
-  width: 275px;
-  }
+  height: 250px;
+  width: 250px;
 }
 
 .grid-item-square {
   margin-bottom: 1rem;
+  @include min-width($min-width--xl) {
+  margin-bottom: 2rem;
+  }
 }
 
 .grid-item img:hover, .grid-item-square img:hover {
