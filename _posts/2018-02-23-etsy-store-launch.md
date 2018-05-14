@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Etsy Store Announcment
+title: Etsy Store Announcement
 tags: drawing illustration sketchbook
 image: >-
   https://78.media.tumblr.com/70eb2991073703f57330d49be5c52b5d/tumblr_nejfk66TLA1qbng02o1_500.jpg
